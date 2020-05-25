@@ -1,0 +1,42 @@
+{% extends "gen_pass/base.html" %}
+{% block titleblock %}
+    Home
+{% endblock titleblock %}
+
+{% block bodyblock %}
+    <form action="password">
+        <div class="form-group">
+            <label for="my-select">Length</label>
+            <select id="my-select" class="" name="length">
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+                <option value="17">17</option>
+                <option value="18" selected>18</option>
+                <option value="19">19</option>
+                <option value="20">20</option>
+                <option value="21">21</option>
+                <option value="22">22</option>
+            </select>
+            <br>
+            <label for="uppercase"> Inclue Uppercase: </label>
+            <input type="checkbox" name="uppercase" id='uppercase' checked>
+            <br>
+            <label for="lowercase"> Inclue Lowercase: </label>
+            <input type="checkbox" name="lowercase" id='lowercase' checked>
+            <br>
+            <label for="numbers"> Inclue numbers: </label>
+            <input type="checkbox" name="numbers" selected='selected' id='numbers' checked>
+            <br>
+            <label for="characters"> Inclue Characters: </label>
+            <input type="checkbox" name="characters" selected='selected' id='characters' checked>
+        </div>
+        <input type="submit" value="Submit" class="btn btn-primary">
+    </form>
+{% endblock bodyblock %}
